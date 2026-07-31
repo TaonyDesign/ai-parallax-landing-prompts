@@ -3,7 +3,7 @@
 影片《怎麼用 AI 做出很高級的網站：捲動視差 Hero》裡用到的每一段 prompt，整理在這裡，直接複製拿去用
 
 - 影片：`<YouTube 連結待補>`
-- 成品頁面：`<Demo 網址待補>`
+- 成品頁面：https://steam-machine-demo.shrill-frog-d7a6.workers.dev/steam-machine-demo/ （桌機開，1440px 以上看得最完整）
 
 一個人用四個步驟、七個 AI 工具，做完過去要一整個團隊才做得完的事。這四個步驟其實就是一間設計 agency 的四個角色
 
