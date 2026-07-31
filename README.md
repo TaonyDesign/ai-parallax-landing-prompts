@@ -13,7 +13,8 @@
 | 3 | 素材團隊 | Meshy、Google Flow、Gemini、Higgsfield | [03-ai-assets.md](03-ai-assets.md) |
 | 4 | 前端工程師 | Claude Code | [04-build-and-scroll.md](04-build-and-scroll.md) |
 
-## 怎麼用這份文件
+
+## 如何使用這份文檔
 
 這裡的 prompt 全部是原版，沒有抽象化成填空模板。因為 prompt 的威力就在具體，`[你的產品] is a [形狀]` 這種模板誰都寫得出來，但它換不到能用的東西
 
@@ -26,6 +27,7 @@
 **prompt 不用全部自己寫。** 卡住的時候，去問 Claude 或 ChatGPT「幫我寫一段給某某工具的 prompt」，複製過來再改
 
 **AI 負責讓你少走冤枉路，設計還是你的手藝。** 所有 AI 產出的視覺都只是「方向」，最終成稿建議自己在 Figma 完成
+
 
 ## 授權與聲明
 
