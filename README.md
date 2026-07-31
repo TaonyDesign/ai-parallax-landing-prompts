@@ -1,6 +1,6 @@
-# 一個人的設計 Agency：捲動視差 Landing Page 全部 Prompt
+# 「一人設計團隊：高級動態網頁設計」  Prompt 整理
 
-影片《怎麼用 AI 做出很高級的網站：捲動視差 Hero》裡用到的每一段 prompt，整理在這裡，直接複製拿去用
+影片《從 0 到 1，打造高級動態網頁設計》裡用到的每一段 prompt，整理在這裡，直接複製拿去用
 
 - 成品頁面：https://steam-machine-demo.shrill-frog-d7a6.workers.dev/steam-machine-demo/ （桌機開，1440px 以上看得最完整）
 
@@ -31,13 +31,14 @@
 
 ## 授權與聲明
 
-這些 prompt 隨意取用、改寫、商用，不必註明出處
+這些 prompt 你可以隨意取用、改寫、商用，註明出處即可
 
-這是設計師視角的 concept redesign 演示，非 Valve 官方內容，與 Valve Corporation 無關。Steam、Steam Machine 及相關商標為 Valve Corporation 所有
+這是設計師視角的 concept redesign 演示，非 Valve 官方內容，與 Valve Corporation 無關
+Steam、Steam Machine 及相關商標為 Valve Corporation 所有
 
 ---
 
-寫更多 UIUX 設計與 AI 工作流的心得：
+更多 UIUX 設計資訊
 
-- 免費電子報，每兩週一封：https://taonydesign.beehiiv.com/
+- 免費電子報：https://taonydesign.beehiiv.com/
 - Threads：https://www.threads.com/@uiux.taony
