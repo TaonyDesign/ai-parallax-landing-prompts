@@ -35,4 +35,4 @@
 
 ---
 
-每兩週一封的免費電子報，寫更多 UIUX 設計與 AI 工作流的心得：`<電子報連結待補>`
+每兩週一封的免費電子報，寫更多 UIUX 設計與 AI 工作流的心得：https://taonydesign.beehiiv.com/
