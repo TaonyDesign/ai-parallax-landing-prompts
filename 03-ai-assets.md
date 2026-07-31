@@ -4,6 +4,8 @@
 
 這一步最容易翻車，也最花時間。整段最重要的一招寫在最後面的「首尾幀錨定」，卡住的時候直接跳去看
 
+這四個檔案裡，這一份是最貼著這台主機的。所以每段 prompt 後面都附了一個 **換成你的專案** 的小節，標出哪幾句是骨架（做任何產品都留著）、哪幾句是這台機器的血肉（換掉）
+
 ## 3-1 圖片轉 3D 模型（Meshy）
 
 Hero 那台會跟著滑鼠轉動的 CRT 主機，是從一張圖生成的 3D 模型
@@ -46,6 +48,16 @@ labels on the housing. Clean hard-surface edges, chamfered corners, product
 render quality, neutral studio lighting, plain background.
 ```
 
+### 換成你的專案
+
+**骨架（照抄，順序也別換）**：物件類型加年代風格 → 材質與表面處理 → 主體形體 → 逐個部件 → 收尾的品質詞（hard-surface edges、chamfered corners、product render quality、neutral studio lighting、plain background）
+
+**血肉（換掉）**：中間那一整段部件描述
+
+**一句話原則**：部件要寫「幾個、什麼形狀、在哪一面、什麼顏色」。只寫「有幾顆按鈕」，AI 會自己發明位置和造型，而且每次都不一樣
+
+對照上面那段就看得出來：「a row of four small rectangular buttons (one red, three grey) above them」把數量、形狀、顏色、相對位置四件事一次講完。這是整段最值得學的句型
+
 ### 拿到模型後檢查四個地方
 
 硬表面模型最容易翻車的就是這四處，轉一圈看：
@@ -76,6 +88,14 @@ Each component hovers evenly spaced with subtle depth of field, as if frozen mid
 ```
 
 出圖後再用對話微調，例如「把 IO 面板移除」「散熱器改成銀色」，一次改一件事
+
+### 換成你的專案
+
+**骨架**：以附圖為準的宣告 → 沿一條軸線排列的空間指令 → 逐件清單 → 攝影規格加背景色加否定詞（no text、no labels、no watermark）
+
+**血肉**：逐件清單，還有背景色
+
+**一句話原則**：先定一條軸線，再排零件。少了「arranged along a single straight diagonal axis」這種空間指令，AI 會把零件散成一團星雲，而且下一步生影片時無法對位
 
 ## 3-3 爆炸拆解影片（Higgsfield）
 
@@ -110,6 +130,19 @@ Audio: Subtle mechanical ambiance — a rapid ratcheting whir as the screws back
 ```
 
 開著 smart mode 的話，生成前它會把每一步列出來讓你確認品質、比例、長度，確認完再 Approve。長度控制在 10 秒
+
+### 換成你的專案
+
+**骨架（七個段落標題原封不動留著）**：Scene、First frame、Disassembly sequence、Last frame、Optics、Lighting、Physics。Audio 那段逐幀化時會丟掉，留著無害
+
+**血肉**：零件名稱、拆解順序、顏色、背景色
+
+**兩句絕對不要刪**：
+
+1. **整個 Physics 段落**。這是防變形的保險絲，跟你做什麼產品無關。「completely rigid」「only translate through space, never deform」這類句子是唯一能壓住 AI 把硬殼揉成軟糖的東西
+2. **First frame 和 Last frame 裡的 `identical to the start image` / `identical to the end image`**。這兩句是跟下一節首尾幀模式的握手，少了它，你指定的首尾圖會被當成「參考風格」而不是「必須一模一樣」
+
+**一句話原則**：每個步驟要寫「往哪個方向、多快、停在哪」。只寫「拆開」，AI 會給你一團亂飛
 
 ## 3-4 首尾幀錨定：這一步最重要的一招
 
@@ -156,6 +189,30 @@ BACKGROUND: a perfectly uniform, solid, very dark charcoal background, exact hex
 
 Static camera, no cuts, no zoom, photorealistic, no text, no logo. 3 to 4 seconds.
 ```
+
+### 換成你的專案
+
+**骨架**：參考圖宣告 → 比例硬宣告 → 細節白名單 → 背景規格 → 運鏡與時長
+
+**血肉**：形狀、孔位清單、背景色
+
+上面兩段裡有四個句型，換什麼產品都用得上：
+
+**比例硬宣告，而且要附失敗判準。** 「The console is a PERFECT CUBE, like a large die」這句還不夠
+
+真正有效的是後面那句「If the body appears wider than it is tall, the result is wrong」。給 AI 一個能自我檢查的判準，比堆形容詞有效得多
+
+**細節白名單。** 先明列有什麼，再明說「除此之外沒有任何文字、logo、圖示、孔位」
+
+AI 天生會替你的產品加東西，這句是唯一壓得住的寫法。這裡實際壓下來的，是憑空長出的 HDMI 孔和面板上的「A」字
+
+**背景規格要逐項否定。** 只寫「深色背景」會拿到漸層、光斑、地平線
+
+要寫成「exact hex color #111111，no gradient, no vignette, no visible floor line, no texture, no spotlight pool」。捲動頁面會停在任意一幀，背景不乾淨會非常明顯
+
+**參考圖的背景要明講忽略。** 開頭那句「Ignore the white background in the reference images」不能省
+
+少了它，去背圖的白底會被當成場景照抄
 
 ## 3-5 素材驗收標準
 
