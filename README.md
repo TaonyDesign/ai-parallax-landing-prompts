@@ -2,7 +2,7 @@
 
 影片《從 0 到 1，打造高級動態網頁設計》裡用到的每一段 prompt，整理在這裡，直接複製拿去用
 
-- 成品頁面：https://steam-machine-demo.shrill-frog-d7a6.workers.dev/steam-machine-demo/ （桌機開，1440px 以上看得最完整）
+- 成品頁面：https://taonydesign.com/steam-machine-demo/ （桌機開，1440px 以上看得最完整）
 
 一個人用四個步驟、七個 AI 工具，做完過去要一整個團隊才做得完的事。這四個步驟其實就是一間設計 agency 的四個角色
 
